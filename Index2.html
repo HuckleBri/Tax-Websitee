@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert tax services and financial solutions in Tidewater. Professional tax preparation, planning, and advisory services for individuals and businesses.">
+    <meta name="keywords" content="tax services, financial planning, Tidewater, tax preparation, business tax, personal tax">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <title>Thomas and Associates of Tidewater - Professional Tax Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="src/assets/logo.png" alt="Thomas and Associates Logo" class="logo">
+        <h1>Welcome to Thomas and Associates of Tidewater</h1>
+        <p class="slogan">Expert Tax Solutions for Your Peace of Mind</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Information/About.html">About Us</a></li>
+                <li><a href="Information/Services.html">Our Services</a></li>
+                <li><a href="Information/Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <h2>Your Trusted Tax Advisors</h2>
+            <p>At Thomas and Associates, we provide expert tax services to help you navigate your financial responsibilities with ease and confidence.</p>
+            <a href="Information/Contact.html" class="cta-button">Schedule a Consultation</a>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Expert Tax Services</h3>
+                <p>Professional tax preparation and planning for individuals and businesses.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Personal Attention</h3>
+                <p>Dedicated support and personalized solutions for your unique needs.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Timely Solutions</h3>
+                <p>Efficient service to meet your deadlines with accuracy.</p>
+            </div>
+        </section>
+
+        <section class="interactive-sections">
+            <div class="card">
+                <h3>Daily Tax Tip</h3>
+                <div class="card-content">
+                    <p id="daily-tip" class="animated-text">Keep all your receipts organized throughout the year!</p>
+                    <button onclick="getNewTip()" class="action-button">Get New Tip</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Quick Tax Estimator</h3>
+                <div class="card-content">
+                    <input type="number" id="income" placeholder="Enter annual income" class="calc-input">
+                    <button onclick="calculateTax()" class="action-button">Calculate Tax</button>
+                    <p class="result">Estimated Tax: <span id="tax-result">$0.00</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Savings Growth Calculator</h3>
+                <div class="card-content">
+                    <input type="number" id="monthly-savings" placeholder="Monthly savings" class="calc-input">
+                    <input type="number" id="interest-rate" placeholder="Annual interest rate %" class="calc-input">
+                    <button onclick="calculateSavings()" class="action-button">Calculate Growth</button>
+                    <p class="result">Annual Total: <span id="savings-result">$0.00</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Tax Bracket Finder</h3>
+                <div class="card-content">
+                    <input type="number" id="annual-income" placeholder="Annual income" class="calc-input">
+                    <select id="filing-status" class="calc-input">
+                        <option value="single">Single</option>
+                        <option value="joint">Married Filing Jointly</option>
+                    </select>
+                    <button onclick="findTaxBracket()" class="action-button">Find Bracket</button>
+                    <p class="result">Tax Bracket: <span id="bracket-result">--</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Deduction Tracker</h3>
+                <div class="card-content">
+                    <input type="text" id="expense-name" placeholder="Expense name" class="calc-input">
+                    <input type="number" id="expense-amount" placeholder="Amount" class="calc-input">
+                    <button onclick="addExpense()" class="action-button">Add Expense</button>
+                    <div id="expense-list"></div>
+                    <p class="result">Total: <span id="total-deductions">$0.00</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Tax Day Countdown</h3>
+                <div class="card-content">
+                    <p id="tax-countdown" class="result"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Thomas and Associates of Tidewater. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
