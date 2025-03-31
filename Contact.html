@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas and Associates of Tidewater - Contact Us</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init(process.env.EMAILJS_PUBLIC_KEY);
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <img src="../src/assets/logo.png" alt="Thomas and Associates Logo" class="logo">
+        <h1>Contact Thomas and Associates</h1>
+        <p class="slogan">Let's Start Your Financial Journey Together</p>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Services.html">Our Services</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-container">
+            <section class="contact-info">
+                <h2>Get in Touch</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Office Location</h3>
+                            <p>1234 Tidewater Drive, Suite 100<br>Virginia Beach, VA 23451</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone Numbers</h3>
+                            <p>Main: (757) 555-0123<br>Fax: (757) 555-0124</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>General Inquiries: info@thomasassociates.com<br>Support: support@thomasassociates.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: By Appointment<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-form">
+                <h2>We'd Love to Hear from You</h2>
+                <p class="form-intro">Thank you for considering Thomas and Associates. We're here to help with your financial journey.</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interest *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a Service</option>
+                            <option value="individual">Individual Tax Services</option>
+                            <option value="business">Business Tax Services</option>
+                            <option value="planning">Tax Planning</option>
+                            <option value="consulting">Financial Consulting</option>
+                            <option value="other">Other Services</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="action-button">Send Message</button>
+                </form>
+            </section>
+        </div>
+
+        <section class="map-section">
+            <h2>Our Location</h2>
+            <div class="map-container">
+                <!-- Add your map embed code here -->
+                <p class="map-placeholder">Interactive map will be displayed here</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Thomas and Associates of Tidewater. All rights reserved.</p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
